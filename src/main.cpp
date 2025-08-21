@@ -1,107 +1,159 @@
 #define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
+#include <gl.h>
+#include <glm.hpp>
+#include <gtc/matrix_transform.hpp>
+#include <gtc/type_ptr.hpp>
+
+#include "Shader.h"
+#include "Camera3D.h"
+
 #include <iostream>
-#include "Camera.h"
 
-using namespace std;
+// 屏幕大小
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
 
-Camera2D camera(0, 0, 1.0f);
+// 相机
+Camera3D camera;
+float lastX = SCR_WIDTH / 2.0f;
+float lastY = SCR_HEIGHT / 2.0f;
+bool firstMouse = true;
 
-// 游戏初始化
-bool init(SDL_Window*& window, SDL_Renderer*& renderer) {
-    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
-        cout << "SDL_Init Error: " << SDL_GetError() << endl;
-        return false;
+// 时间
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
+// 输入处理
+void processInput(const Uint8 *state)
+{
+    if (state[SDL_SCANCODE_W])
+        camera.ProcessKeyboard(FORWARD, deltaTime);
+    if (state[SDL_SCANCODE_S])
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
+    if (state[SDL_SCANCODE_A])
+        camera.ProcessKeyboard(LEFT, deltaTime);
+    if (state[SDL_SCANCODE_D])
+        camera.ProcessKeyboard(RIGHT, deltaTime);
+    if (state[SDL_SCANCODE_SPACE])
+        camera.ProcessKeyboard(UP, deltaTime); // 空格向上
+    if (state[SDL_SCANCODE_LSHIFT])
+        camera.ProcessKeyboard(DOWN, deltaTime); // 左Shift向下
+}
+
+int main()
+{
+    // 初始化 SDL
+    if (SDL_Init(SDL_INIT_VIDEO) < 0)
+    {
+        std::cerr << "SDL 初始化失败: " << SDL_GetError() << std::endl;
+        return -1;
     }
 
-    window = SDL_CreateWindow("MiniCraft", 100, 100, 1200, 900, SDL_WINDOW_SHOWN);
-    if (!window) {
-        cout << "SDL_CreateWindow Error: " << SDL_GetError() << endl;
+    // 设置 OpenGL 版本
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+
+    // 创建窗口
+    SDL_Window *window = SDL_CreateWindow("OpenGL Cube",
+                                          SDL_WINDOWPOS_CENTERED,
+                                          SDL_WINDOWPOS_CENTERED,
+                                          SCR_WIDTH, SCR_HEIGHT,
+                                          SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
+
+    if (!window)
+    {
+        std::cerr << "窗口创建失败: " << SDL_GetError() << std::endl;
         SDL_Quit();
-        return false;
+        return -1;
     }
 
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    if (!renderer) {
-        cout << "SDL_CreateRenderer Error: " << SDL_GetError() << endl;
-        SDL_DestroyWindow(window);
-        SDL_Quit();
-        return false;
+    SDL_GLContext context = SDL_GL_CreateContext(window);
+    SDL_SetRelativeMouseMode(SDL_TRUE); // 捕获鼠标
+
+    // 初始化 GLAD
+    if (!gladLoadGL((GLADloadfunc)SDL_GL_GetProcAddress))
+    {
+        std::cerr << "Failed to initialize GLAD" << std::endl;
+        return -1;
     }
 
-    return true;
-}
+    glEnable(GL_DEPTH_TEST);
 
-// 游戏事件处理
-void handleEvents(bool& running) {
-    SDL_Event event;
-    const Uint8* state = SDL_GetKeyboardState(NULL);
+    Shader shader("assets/shaders/basic.vert", "assets/shaders/basic.frag");
 
-    while (SDL_PollEvent(&event)) {
-        if (event.type == SDL_QUIT) {
-            running = false;
-        }
-    }
+    // 顶点数据
+    float vertices[] = {
+        -0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, -0.5f, 0.5f, 0.5f, -0.5f, -0.5f, 0.5f,
+        -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, -0.5f, 0.5f, -0.5f, 0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f, 0.5f, 0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, 0.5f, 0.5f, 0.5f, 0.5f,
+        -0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, -0.5f, -0.5f, 0.5f, -0.5f, -0.5f, -0.5f,
+        -0.5f, 0.5f, -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, -0.5f, 0.5f, 0.5f, -0.5f, 0.5f, -0.5f};
 
-    float deltaTime = 1.0f / 60.0f; // 简单固定帧率
+    unsigned int VBO, VAO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
 
-    if (state[SDL_SCANCODE_W]) camera.ProcessKeyboard('W', deltaTime);
-    if (state[SDL_SCANCODE_S]) camera.ProcessKeyboard('S', deltaTime);
-    if (state[SDL_SCANCODE_A]) camera.ProcessKeyboard('A', deltaTime);
-    if (state[SDL_SCANCODE_D]) camera.ProcessKeyboard('D', deltaTime);
-}
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-// 游戏逻辑更新
-void update(float deltaTime) {
-    const Uint8* keyState = SDL_GetKeyboardState(NULL);
-}
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+    glEnableVertexAttribArray(0);
 
-// 游戏渲染
-void render(SDL_Renderer* renderer) {
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-    SDL_RenderClear(renderer);
-
-    // 蓝色方块
-    SDL_Rect blueSquare;
-    blueSquare.w = 50 * camera.zoom;
-    blueSquare.h = 50 * camera.zoom;
-    blueSquare.x = (100 - camera.x) * camera.zoom + 400; // 400 = 屏幕中心
-    blueSquare.y = (100 - camera.y) * camera.zoom + 300; // 300 = 屏幕中心
-
-    SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
-    SDL_RenderFillRect(renderer, &blueSquare);
-
-    SDL_RenderPresent(renderer);
-}
-
-
-int main(int argc, char* argv[]) {
-    SDL_Window* window = nullptr;
-    SDL_Renderer* renderer = nullptr;
-
-    if (!init(window, renderer)) {
-        return 1;
-    }
-
+    // 渲染循环
     bool running = true;
-    const int FPS = 60;
-    const int frameDelay = 1000 / FPS;
+    SDL_Event event;
+    while (running)
+    {
+        float currentFrame = SDL_GetTicks() / 1000.0f;
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
 
-    while (running) {
-        Uint32 frameStart = SDL_GetTicks();
+        const Uint8 *state = SDL_GetKeyboardState(NULL);
+        processInput(state);
 
-        handleEvents(running);
-        float deltaTime = frameDelay / 1000.0f;  // 秒
-        update(deltaTime);
-        render(renderer);
-
-        Uint32 frameTime = SDL_GetTicks() - frameStart;
-        if (frameDelay > frameTime) {
-            SDL_Delay(frameDelay - frameTime);
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+                running = false;
+            if (event.type == SDL_MOUSEMOTION)
+            {
+                float xoffset = event.motion.xrel;
+                float yoffset = -event.motion.yrel; // 反转 y 轴
+                camera.ProcessMouseMovement(xoffset, yoffset);
+            }
         }
+
+        // 清屏
+        glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        // 绘制立方体
+        shader.use();
+
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 view = camera.GetViewMatrix();
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom),
+                                                (float)SCR_WIDTH / (float)SCR_HEIGHT,
+                                                0.1f, 100.0f);
+
+        shader.setMat4("model", model);
+        shader.setMat4("view", view);
+        shader.setMat4("projection", projection);
+
+        glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        SDL_GL_SwapWindow(window);
     }
 
-    SDL_DestroyRenderer(renderer);
+    // 清理
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
+    SDL_GL_DeleteContext(context);
     SDL_DestroyWindow(window);
     SDL_Quit();
     return 0;
