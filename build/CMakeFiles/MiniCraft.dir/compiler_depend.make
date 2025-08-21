@@ -792,6 +792,7 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
@@ -921,6 +922,7 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h \
   E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
   E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
   E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
   E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
   E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL.h \
@@ -1613,6 +1615,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc:
 
+E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc:
@@ -2006,6 +2010,8 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_misc.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h:
 
