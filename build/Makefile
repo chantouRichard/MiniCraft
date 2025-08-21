@@ -152,6 +152,54 @@ external/glad/gl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/external/glad/gl.c.s
 .PHONY : external/glad/gl.c.s
 
+src/Block.obj: src/Block.cpp.obj
+.PHONY : src/Block.obj
+
+# target to build an object file
+src/Block.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Block.cpp.obj
+.PHONY : src/Block.cpp.obj
+
+src/Block.i: src/Block.cpp.i
+.PHONY : src/Block.i
+
+# target to preprocess a source file
+src/Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Block.cpp.i
+.PHONY : src/Block.cpp.i
+
+src/Block.s: src/Block.cpp.s
+.PHONY : src/Block.s
+
+# target to generate assembly for a file
+src/Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Block.cpp.s
+.PHONY : src/Block.cpp.s
+
+src/BlockManager.obj: src/BlockManager.cpp.obj
+.PHONY : src/BlockManager.obj
+
+# target to build an object file
+src/BlockManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj
+.PHONY : src/BlockManager.cpp.obj
+
+src/BlockManager.i: src/BlockManager.cpp.i
+.PHONY : src/BlockManager.i
+
+# target to preprocess a source file
+src/BlockManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.i
+.PHONY : src/BlockManager.cpp.i
+
+src/BlockManager.s: src/BlockManager.cpp.s
+.PHONY : src/BlockManager.s
+
+# target to generate assembly for a file
+src/BlockManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.s
+.PHONY : src/BlockManager.cpp.s
+
 src/Camera3D.obj: src/Camera3D.cpp.obj
 .PHONY : src/Camera3D.obj
 
@@ -176,6 +224,30 @@ src/Camera3D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.s
 .PHONY : src/Camera3D.cpp.s
 
+src/Chunk.obj: src/Chunk.cpp.obj
+.PHONY : src/Chunk.obj
+
+# target to build an object file
+src/Chunk.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj
+.PHONY : src/Chunk.cpp.obj
+
+src/Chunk.i: src/Chunk.cpp.i
+.PHONY : src/Chunk.i
+
+# target to preprocess a source file
+src/Chunk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Chunk.cpp.i
+.PHONY : src/Chunk.cpp.i
+
+src/Chunk.s: src/Chunk.cpp.s
+.PHONY : src/Chunk.s
+
+# target to generate assembly for a file
+src/Chunk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Chunk.cpp.s
+.PHONY : src/Chunk.cpp.s
+
 src/Shader.obj: src/Shader.cpp.obj
 .PHONY : src/Shader.obj
 
@@ -199,6 +271,30 @@ src/Shader.s: src/Shader.cpp.s
 src/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
+
+src/TextureManager.obj: src/TextureManager.cpp.obj
+.PHONY : src/TextureManager.obj
+
+# target to build an object file
+src/TextureManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj
+.PHONY : src/TextureManager.cpp.obj
+
+src/TextureManager.i: src/TextureManager.cpp.i
+.PHONY : src/TextureManager.i
+
+# target to preprocess a source file
+src/TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.i
+.PHONY : src/TextureManager.cpp.i
+
+src/TextureManager.s: src/TextureManager.cpp.s
+.PHONY : src/TextureManager.s
+
+# target to generate assembly for a file
+src/TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.s
+.PHONY : src/TextureManager.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -236,12 +332,24 @@ help:
 	@echo ... external/glad/gl.obj
 	@echo ... external/glad/gl.i
 	@echo ... external/glad/gl.s
+	@echo ... src/Block.obj
+	@echo ... src/Block.i
+	@echo ... src/Block.s
+	@echo ... src/BlockManager.obj
+	@echo ... src/BlockManager.i
+	@echo ... src/BlockManager.s
 	@echo ... src/Camera3D.obj
 	@echo ... src/Camera3D.i
 	@echo ... src/Camera3D.s
+	@echo ... src/Chunk.obj
+	@echo ... src/Chunk.i
+	@echo ... src/Chunk.s
 	@echo ... src/Shader.obj
 	@echo ... src/Shader.i
 	@echo ... src/Shader.s
+	@echo ... src/TextureManager.obj
+	@echo ... src/TextureManager.i
+	@echo ... src/TextureManager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

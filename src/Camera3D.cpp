@@ -30,9 +30,9 @@ void Camera3D::ProcessKeyboard(Camera_Movement direction, float deltaTime) {
         Position += horizontalFront * velocity;
     if (direction == BACKWARD)
         Position -= horizontalFront * velocity;
-    if (direction == LEFT)
+    if (direction == LEFTWARD)
         Position -= horizontalRight * velocity;
-    if (direction == RIGHT)
+    if (direction == RIGHTWARD)
         Position += horizontalRight * velocity;
 
     // 垂直移动

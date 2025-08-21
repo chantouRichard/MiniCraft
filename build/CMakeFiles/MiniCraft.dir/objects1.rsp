@@ -1,1 +1,1 @@
-CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj CMakeFiles/MiniCraft.dir/src/main.cpp.obj
+CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj CMakeFiles/MiniCraft.dir/src/Block.cpp.obj CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj CMakeFiles/MiniCraft.dir/src/main.cpp.obj

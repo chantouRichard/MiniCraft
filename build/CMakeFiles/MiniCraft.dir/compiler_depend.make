@@ -30,6 +30,619 @@ CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj: E:/02_Projects/02_Personal/Mini
   E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
   E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h
 
+CMakeFiles/MiniCraft.dir/src/Block.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/Block.cpp \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/float.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
+  C:/mingw64/x86_64-w64-mingw32/include/float.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_decl.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_relational.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_common.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_exponential.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_geometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_matrix.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_packing.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_trigonometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_vector_relational.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/qualifier.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_int_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/fwd.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/geometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/glm.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/integer.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/packing.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/simd/platform.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/trigonometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vector_relational.hpp
+
+CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/BlockManager.cpp \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/float.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
+  C:/mingw64/x86_64-w64-mingw32/include/float.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockManager.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_decl.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_relational.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_common.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_exponential.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_geometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_matrix.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_packing.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_trigonometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_vector_relational.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/qualifier.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_int_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/fwd.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/geometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/glm.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/integer.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/packing.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/simd/platform.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/trigonometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vector_relational.hpp
+
 CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/Camera3D.cpp \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
@@ -201,6 +814,318 @@ CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj: E:/02_Projects/02_Personal/MiniCr
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
   E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_decl.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_relational.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_common.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_exponential.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_geometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_matrix.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_packing.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_trigonometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_vector_relational.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/qualifier.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_int_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/fwd.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/geometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/glm.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/integer.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/packing.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/simd/platform.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/trigonometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vector_relational.hpp
+
+CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/Chunk.cpp \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/concurrence.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/float.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
+  C:/mingw64/x86_64-w64-mingw32/include/float.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
   E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp \
   E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp \
   E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp \
@@ -663,37 +1588,9 @@ CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: E:/02_Projects/02_Personal/MiniCraf
   E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec4.hpp \
   E:/02_Projects/02_Personal/MiniCraft/lib/glm/vector_relational.hpp
 
-CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/main.cpp \
+CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/TextureManager.cpp \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
@@ -772,7 +1669,6 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -792,10 +1688,366 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/float.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
+  C:/mingw64/x86_64-w64-mingw32/include/float.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
+  E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_decl.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_relational.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_common.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_exponential.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_geometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_matrix.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_packing.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_trigonometric.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_vector_relational.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/qualifier.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_int_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4_sized.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/fwd.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/geometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/glm.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/integer.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/packing.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/simd/platform.h \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/trigonometric.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec2.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec4.hpp \
+  E:/02_Projects/02_Personal/MiniCraft/lib/glm/vector_relational.hpp
+
+CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/main.cpp \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/concurrence.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
@@ -886,6 +2138,7 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/assert.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
   C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
@@ -899,12 +2152,14 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/setjmp.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
@@ -914,7 +2169,9 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
   C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
@@ -923,8 +2180,13 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
   E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h \
   E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h \
   E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockManager.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
   E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
   E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
+  E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h \
   E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL.h \
   E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_assert.h \
   E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_atomic.h \
@@ -1161,9 +2423,9 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/
 
 E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.c:
 
-E:/02_Projects/02_Personal/MiniCraft/src/Shader.cpp:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h:
+
+E:/02_Projects/02_Personal/MiniCraft/src/Shader.cpp:
 
 E:/02_Projects/02_Personal/MiniCraft/src/main.cpp:
 
@@ -1173,43 +2435,43 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h:
 
-E:/02_Projects/02_Personal/MiniCraft/src/Camera3D.cpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_float.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4_precision.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool1.hpp:
-
 C:/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/string.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_config.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
 
-C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
+C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_config.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h:
 
@@ -1219,65 +2481,67 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp:
+C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3.hpp:
 
-C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/matrix.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/stdarg.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_vectorize.hpp:
+
+C:/mingw64/x86_64-w64-mingw32/include/stdarg.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.inl:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.inl:
 
 C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.inl:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_touch.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x2.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.inl:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h:
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_touch.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_relational.hpp:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/geometric.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_relational.hpp:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdio.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h:
+C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
@@ -1295,23 +2559,29 @@ E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.h:
 
 E:/02_Projects/02_Personal/MiniCraft/external/glad/khrplatform.h:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_hints.h:
+
+E:/02_Projects/02_Personal/MiniCraft/src/Block.cpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x4_precision.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.inl:
+E:/02_Projects/02_Personal/MiniCraft/src/Chunk.cpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
 
@@ -1323,19 +2593,19 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x4.inl:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float1.hpp:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float1.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3_precision.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h:
 
@@ -1345,11 +2615,11 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_mutex.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
 
@@ -1361,31 +2631,31 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec3.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc:
 
@@ -1399,9 +2669,9 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h:
 
@@ -1413,23 +2683,21 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_scancode.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/vec1.hpp:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/exponential.hpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:
 
@@ -1461,21 +2729,21 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3_precision.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_integer.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h:
 
@@ -1483,19 +2751,19 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_keyboard.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat:
 
@@ -1503,13 +2771,13 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
 
@@ -1519,11 +2787,15 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_rect.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_rect.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h:
 
@@ -1531,35 +2803,35 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_pixels.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_pixels.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_render.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_system.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4_precision.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_system.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.inl:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint2_sized.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h:
 
@@ -1575,9 +2847,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_power.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4_sized.hpp:
 
@@ -1595,21 +2867,23 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.inl:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc:
 
@@ -1621,17 +2895,19 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x3.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_exponential.inl:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/vec2.hpp:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2.hpp:
 
@@ -1639,17 +2915,17 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_uti
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3_precision.hpp:
 
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int4.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map:
 
@@ -1663,17 +2939,19 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp:
-
 C:/mingw64/x86_64-w64-mingw32/include/math.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_filesystem.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
+
+E:/02_Projects/02_Personal/MiniCraft/src/BlockManager.cpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
@@ -1691,9 +2969,9 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/float.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp:
-
 C:/mingw64/x86_64-w64-mingw32/include/assert.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/integer.hpp:
 
@@ -1709,23 +2987,29 @@ C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/process.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h:
 
-E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h:
+
+E:/02_Projects/02_Personal/MiniCraft/include/Block.h:
+
+E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h:
+
+E:/02_Projects/02_Personal/MiniCraft/include/Shader.h:
+
+E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/common.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/_fixes.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3_sized.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_common.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/compute_vector_decl.hpp:
 
@@ -1737,15 +3021,15 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_guid.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_geometric.inl:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_matrix.inl:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_packing.inl:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/func_trigonometric.inl:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/qualifier.hpp:
 
@@ -1753,15 +3037,17 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_half.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x2.hpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x3.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.hpp:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat2x4.inl:
 
@@ -1773,9 +3059,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint1.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x2.inl:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float3_precision.hpp:
 
@@ -1783,19 +3069,19 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x3.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat3x4.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.hpp:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_mat4x2.inl:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x3.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
 
@@ -1805,13 +3091,15 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_blendmode.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec1.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_geometric.inl:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_geometric.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec2.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec3.hpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h:
 
@@ -1821,25 +3109,23 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_metal.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_vec4.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_surface.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x4.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x2.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_float.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_uint_sized.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_float.hpp:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/epsilon.inl:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x2_precision.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/epsilon.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double2x4_precision.hpp:
 
@@ -1847,15 +3133,15 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/simd/platform.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x4_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x2_precision.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/glm.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x3_precision.hpp:
 
@@ -1863,9 +3149,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float2x2.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double3x4.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_audio.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x2_precision.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_audio.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_double4x3.hpp:
 
@@ -1881,9 +3167,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float3x3_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x2_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_endian.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_endian.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x3_precision.hpp:
 
@@ -1891,35 +3177,27 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_float4x4_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.inl:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_timer.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.inl:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_int_sized.hpp:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2.hpp:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool3_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool2_precision.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool4.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint3.hpp:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double2.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/include/BlockManager.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h:
 
@@ -1931,9 +3209,15 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int1.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp:
+
 C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double4_precision.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float2_precision.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_timer.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float4.hpp:
 
@@ -1943,19 +3227,15 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int3_sized.hpp:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/concurrence.h:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint4_sized.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/fwd.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.inl:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.hpp:
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat2x3.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat3x4.hpp:
 
@@ -1969,9 +3249,37 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/mat4x4.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/packing.hpp:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int1_sized.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/trigonometric.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.inl:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.inl:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.hpp:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h:
+
+E:/02_Projects/02_Personal/MiniCraft/src/Camera3D.cpp:
+
+E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/process.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_version.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h:
+
+E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h:
 
@@ -1979,7 +3287,7 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc:
 
-E:/02_Projects/02_Personal/MiniCraft/include/Shader.h:
+E:/02_Projects/02_Personal/MiniCraft/src/TextureManager.cpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h:
 
@@ -2011,11 +3319,19 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h:
 
@@ -2027,9 +3343,9 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h:
 
@@ -2065,8 +3381,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
@@ -2077,7 +3391,11 @@ C:/mingw64/x86_64-w64-mingw32/include/setjmp.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_assert.h:
 
@@ -2085,9 +3403,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_atomic.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_clipboard.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/close_code.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_error.h:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/close_code.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_events.h:
 
@@ -2101,13 +3419,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_haptic.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_hidapi.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_hints.h:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_joystick.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_keycode.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/type_ptr.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_locale.h:
 
@@ -2125,13 +3439,9 @@ E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_rwops.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_sensor.h:
 
-E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double1_precision.hpp:
-
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_shape.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_thread.h:
-
-E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_version.h:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/SDL2/include/SDL2/SDL_video.h:
 
@@ -2157,12 +3467,22 @@ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_transform.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_trigonometric.inl:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool1.hpp:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool1_precision.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double1.hpp:
 
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double1_precision.hpp:
+
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float1_precision.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int1_sized.hpp:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_relational.inl:
 
 E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint1_sized.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/type_ptr.hpp:
+
+E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/vec1.hpp:

@@ -9,8 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.c" "CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj" "gcc" "CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj.d"
+  "E:/02_Projects/02_Personal/MiniCraft/src/Block.cpp" "CMakeFiles/MiniCraft.dir/src/Block.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/Block.cpp.obj.d"
+  "E:/02_Projects/02_Personal/MiniCraft/src/BlockManager.cpp" "CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj.d"
   "E:/02_Projects/02_Personal/MiniCraft/src/Camera3D.cpp" "CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj.d"
+  "E:/02_Projects/02_Personal/MiniCraft/src/Chunk.cpp" "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj.d"
   "E:/02_Projects/02_Personal/MiniCraft/src/Shader.cpp" "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj.d"
+  "E:/02_Projects/02_Personal/MiniCraft/src/TextureManager.cpp" "CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj.d"
   "E:/02_Projects/02_Personal/MiniCraft/src/main.cpp" "CMakeFiles/MiniCraft.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MiniCraft.dir/src/main.cpp.obj.d"
   )
 

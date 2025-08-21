@@ -30,7 +30,7 @@ else()
 endif()
 
 # 生成可执行文件
-add_executable(MiniCraft ${SOURCES} external/glad/gl.c)
+add_executable(MiniCraft ${SOURCES})
 
 # 链接 SDL2main 和 SDL2（手动指定路径）
 target_link_libraries(MiniCraft
