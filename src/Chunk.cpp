@@ -92,21 +92,31 @@ bool Chunk::neighborsReady() {
 void Chunk::generate() {
     blocks.clear();
 
+    // 初始化 grid
+    for (int x=0;x<CHUNK_SIZE;x++)
+        for (int z=0;z<CHUNK_SIZE;z++)
+            for (int y=0;y<CHUNK_HEIGHT;y++)
+                blockGrid[x][y][z] = nullptr;
+
     for(int x = 0; x < CHUNK_SIZE; x++){
         for(int z = 0; z < CHUNK_SIZE; z++){
-            // 世界坐标
             int worldX = (int)origin.x + x;
             int worldZ = (int)origin.z + z;
 
-            // 生成高度
             float h = noise.GetNoise((float)worldX, (float)worldZ); // [-1,1]
-            int height = (int)((h + 1.0f) * 10.0f); // 0~20 高度可调
+            int height = (int)((h + 1.0f) * 10.0f); // 0~20
 
-            // 底层填充方块
             for(int y = -1; y < height; y++){
                 glm::vec3 pos = origin + glm::vec3(x, y, z);
                 BlockType type = (y == height - 1) ? BlockType::Grass : BlockType::Stone;
+
                 auto block = std::make_shared<Block>(type);
+
+                // 存进 grid
+                if (y >= 0 && y < CHUNK_HEIGHT)
+                    blockGrid[x][y][z] = block;
+
+                // 如果还需要渲染遍历，用 blocks 存储实例
                 blocks.push_back({block, pos});
             }
         }
@@ -115,6 +125,7 @@ void Chunk::generate() {
     generated = true;
     dirty = true;
 }
+
 
 
 // 第二步：构建 Mesh（前提：邻居也生成了）
@@ -245,10 +256,8 @@ void Chunk::render(Shader &shader)
     glBindVertexArray(0);
 }
 Block* Chunk::getBlockAtLocal(int lx, int y, int lz) {
-    for(auto &b : blocks) {
-        glm::vec3 lp = b.position - origin; // 局部坐标
-        if((int)lp.x == lx && (int)lp.y == y && (int)lp.z == lz)
-            return b.block.get();
-    }
-    return nullptr;
+    if(lx < 0 || lx >= CHUNK_SIZE || lz < 0 || lz >= CHUNK_SIZE || y < 0 || y >= CHUNK_HEIGHT)
+        return nullptr;
+    auto &ptr = blockGrid[lx][y][lz];
+    return ptr ? ptr.get() : nullptr;
 }

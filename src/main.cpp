@@ -131,6 +131,56 @@ void updateChunkGeneration(int chunksPerFrame = 1)
         pendingChunks.pop();
     }
 }
+#include <unordered_set>
+const int RENDER_RADIUS = 8; // 渲染半径
+void updateVisibleChunks(int playerChunkX, int playerChunkZ)
+{
+    std::unordered_set<std::pair<int,int>, pair_hash> needed; // 存储需要的区块坐标
+
+    for (int dx = -RENDER_RADIUS; dx <= RENDER_RADIUS; dx++)
+    {
+        for (int dz = -RENDER_RADIUS; dz <= RENDER_RADIUS; dz++)
+        {
+            if (dx*dx + dz*dz > RENDER_RADIUS*RENDER_RADIUS) continue; // 圆形区域
+
+            int cx = playerChunkX + dx;
+            int cz = playerChunkZ + dz;
+            needed.insert({cx, cz});
+
+            // 如果还没加载，就创建任务
+            if (gChunks.find({cx, cz}) == gChunks.end())
+            {
+                auto chunk = std::make_shared<Chunk>(glm::vec3(cx * CHUNK_SIZE, 0, cz * CHUNK_SIZE));
+                gChunks[{cx, cz}] = chunk;
+                pendingChunks.push({chunk, false});
+                totalChunks++;
+            }
+        }
+    }
+
+    // 找出不在 needed 内的区块 → 卸载
+    std::vector<std::pair<int,int>> toRemove;
+    for (auto &kv : gChunks)
+    {
+        if (needed.find(kv.first) == needed.end())
+        {
+            toRemove.push_back(kv.first);
+        }
+    }
+    for (auto &pos : toRemove)
+    {
+        gChunks.erase(pos);
+    }
+
+    // 更新 readyChunks
+    readyChunks.clear();
+    for (auto &kv : gChunks)
+    {
+        if (kv.second->generated) // 你需要给 Chunk 加一个标记，确认它已生成 mesh
+            readyChunks.push_back(kv.second);
+    }
+}
+
 
 // -------------------- 输入处理 --------------------
 void processInput(const Uint8 *state)
@@ -268,6 +318,10 @@ void gameLoop(SDL_Window *window, Shader &shader)
             if (event.type == SDL_MOUSEMOTION)
                 handleMouseMotion(event);
         }
+        int playerChunkX = (int)floor(camera.Position.x / CHUNK_SIZE);
+        int playerChunkZ = (int)floor(camera.Position.z / CHUNK_SIZE);
+
+        updateVisibleChunks(playerChunkX, playerChunkZ);
         updateChunkGeneration(1); // 每帧生成 1 个 Chunk
 
         renderScene(shader);

@@ -13,7 +13,7 @@ struct BlockInstance {
     glm::vec3 position;
 };
 #define CHUNK_SIZE 16
-
+#define CHUNK_HEIGHT 256
 class Chunk {
 public:
     Chunk(glm::vec3 origin);
@@ -27,6 +27,7 @@ public:
     void render(Shader& shader);
     glm::vec3 origin;
     std::vector<BlockInstance> blocks;
+    std::shared_ptr<Block> blockGrid[CHUNK_SIZE][CHUNK_HEIGHT][CHUNK_SIZE];
     Block* getBlockAtLocal(int lx, int y, int lz);
     bool neighborsReady();
 

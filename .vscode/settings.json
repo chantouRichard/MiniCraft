@@ -50,6 +50,7 @@
         "map": "cpp",
         "set": "cpp",
         "list": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "ranges": "cpp"
     }
 }
