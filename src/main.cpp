@@ -35,6 +35,7 @@ float lastFrame = 0.0f;
 #include <queue>
 #include <vector>
 #include <memory>
+#include <algorithm>
 
 struct ChunkTask {
     std::shared_ptr<Chunk> chunk;
@@ -44,18 +45,42 @@ struct ChunkTask {
 std::queue<ChunkTask> pendingChunks;
 std::vector<std::shared_ptr<Chunk>> readyChunks;
 
-void initChunks() {
-    int worldSizeX = 17;
-    int worldSizeZ = 17;
-    float chunkSpacing = CHUNK_SIZE; // 每个 Chunk 的大小
+void initChunks(int playerChunkX, int playerChunkZ) {
+    int radius = 2;               // 半径
+    float chunkSpacing = CHUNK_SIZE;
 
-    for(int x = 0; x < worldSizeX; ++x){
-        for(int z = 0; z < worldSizeZ; ++z){
-            auto chunk = std::make_shared<Chunk>(glm::vec3(x*chunkSpacing, 0, z*chunkSpacing));
-            pendingChunks.push({chunk, false});
+    struct ChunkWithDist {
+        std::shared_ptr<Chunk> chunk;
+        int dist; // 曼哈顿距离
+    };
+    std::vector<ChunkWithDist> chunks;
+
+    // 扫描半径范围内的 Chunk
+    for(int x = playerChunkX - radius; x <= playerChunkX + radius; ++x){
+        for(int z = playerChunkZ - radius; z <= playerChunkZ + radius; ++z){
+            // 计算欧几里得距离，保证是圆形区域
+            int dx = x - playerChunkX;
+            int dz = z - playerChunkZ;
+            if(dx*dx + dz*dz <= radius*radius){  // 在半径内
+                int dist = abs(dx) + abs(dz);   // 曼哈顿距离排序用
+                auto chunk = std::make_shared<Chunk>(glm::vec3(x*chunkSpacing, 0, z*chunkSpacing));
+                chunks.push_back({chunk, dist});
+            }
         }
     }
+
+    // 按曼哈顿距离排序，距离近的先生成
+    std::sort(chunks.begin(), chunks.end(), [](const ChunkWithDist &a, const ChunkWithDist &b){
+        return a.dist < b.dist;
+    });
+
+    // 入队
+    for(auto &c : chunks){
+        pendingChunks.push({c.chunk, false});
+    }
 }
+
+
 void updateChunkGeneration(int chunksPerFrame = 1) {
     int count = 0;
     while(!pendingChunks.empty() && count < chunksPerFrame){
@@ -137,7 +162,7 @@ Shader initResources()
     TextureManager::init();
 
     // 创建区块
-    initChunks();
+    initChunks(camera.Position.x / CHUNK_SIZE, camera.Position.z / CHUNK_SIZE);
 
     // 初始化方块共享网格
     Block::initSharedMesh();
