@@ -471,8 +471,6 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/type_ptr.inl \
- E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
- E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
@@ -504,8 +502,8 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
- E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
  E:/02_Projects/02_Personal/MiniCraft/include/BlockManager.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
@@ -524,4 +522,11 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
- E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h
+ E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h \
+ E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/queue \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/deque \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/deque.tcc \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_queue.h

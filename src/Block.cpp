@@ -7,49 +7,11 @@ unsigned int Block::VAO = 0;
 unsigned int Block::VBO = 0;
 
 Block::Block(BlockType type) : type(type) {
-    // loadTextures();
     // 从纹理管理器获取共享纹理
     TextureSet ts = TextureManager::get(type);
     textureTop    = ts.top;
     textureBottom = ts.bottom;
     textureSide   = ts.side;
-}
-
-void Block::loadTextures() {
-    auto loadTexture = [](const char* path) {
-        unsigned int tex;
-        glGenTextures(1, &tex);
-        glBindTexture(GL_TEXTURE_2D, tex);
-
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
-        int w, h, nrChannels;
-        unsigned char* data = stbi_load(path, &w, &h, &nrChannels, 0);
-        if (data) {
-            GLenum format = (nrChannels == 4) ? GL_RGBA : GL_RGB;
-            glTexImage2D(GL_TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, data);
-            glGenerateMipmap(GL_TEXTURE_2D);
-        } else {
-            std::cerr << "Failed to load texture: " << path << std::endl;
-        }
-        stbi_image_free(data);
-        return tex;
-    };
-
-    if (type == BlockType::Grass) {
-        textureTop    = loadTexture("assets/textures/grass_top.png");
-        textureBottom = loadTexture("assets/textures/grass_bottom.png");
-        textureSide   = loadTexture("assets/textures/grass_side.png");
-    }
-    else if (type == BlockType::Dirt) {
-        textureTop = textureBottom = textureSide = loadTexture("assets/textures/dirt.png");
-    }
-    else if (type == BlockType::Stone) {
-        textureTop = textureBottom = textureSide = loadTexture("assets/textures/stone.png");
-    }
 }
 
 void Block::render(Shader& shader) {
@@ -148,4 +110,10 @@ void Block::initSharedMesh() {
     glEnableVertexAttribArray(1);
 
     glBindVertexArray(0);
+}
+
+GLuint Block::getTextureForFace(Face f) const {
+    if (f==Face::TOP) return textureTop;
+    if (f==Face::BOTTOM) return textureBottom;
+    return textureSide;
 }
