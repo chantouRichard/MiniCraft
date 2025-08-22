@@ -15,6 +15,7 @@
 #include "BlockType.h"
 #include "Chunk.h"
 #include "TextureManager.h"
+#include "Globals.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
@@ -25,11 +26,26 @@ const unsigned int SCR_HEIGHT = 800;
 
 // 全局对象
 Camera3D camera;
-Chunk* chunk = nullptr;
+Chunk *chunk = nullptr;
 
 // 时间控制
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
+
+// 多线程渲染
+#include <thread>
+#include <mutex>
+#include <atomic>
+#include <condition_variable>
+std::mutex meshMutex;                          // mesh队列锁
+std::vector<std::shared_ptr<Chunk>> meshQueue; // 等待生成 mesh 的区块
+void generateChunkAsync(std::shared_ptr<Chunk> chunk)
+{
+    chunk->generate(); // CPU密集型
+    // 放入 mesh 队列，主线程稍后处理 finalizeMesh
+    std::lock_guard<std::mutex> lock(meshMutex);
+    meshQueue.push_back(chunk);
+}
 
 // 区块分批渲染
 #include <queue>
@@ -37,78 +53,104 @@ float lastFrame = 0.0f;
 #include <memory>
 #include <algorithm>
 
-struct ChunkTask {
+struct ChunkTask
+{
     std::shared_ptr<Chunk> chunk;
     bool generated = false;
 };
+int totalChunks = 0;     // 初始化时总共要生成的区块数量
+int loadedChunks = 0;    // 已经生成的区块数量
 
 std::queue<ChunkTask> pendingChunks;
 std::vector<std::shared_ptr<Chunk>> readyChunks;
 
-void initChunks(int playerChunkX, int playerChunkZ) {
-    int radius = 2;               // 半径
+void initChunks(int playerChunkX, int playerChunkZ)
+{
+    totalChunks = 0;
+    noise.SetSeed(12345); // 12345 可以换成随机数或玩家输入
+    noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);
+    noise.SetFrequency(0.05f); // 控制地形起伏的频率
+    int radius = 8;            // 半径
     float chunkSpacing = CHUNK_SIZE;
 
-    struct ChunkWithDist {
+    struct ChunkWithDist
+    {
         std::shared_ptr<Chunk> chunk;
         int dist; // 曼哈顿距离
     };
     std::vector<ChunkWithDist> chunks;
 
     // 扫描半径范围内的 Chunk
-    for(int x = playerChunkX - radius; x <= playerChunkX + radius; ++x){
-        for(int z = playerChunkZ - radius; z <= playerChunkZ + radius; ++z){
+    for (int x = playerChunkX - radius; x <= playerChunkX + radius; ++x)
+    {
+        for (int z = playerChunkZ - radius; z <= playerChunkZ + radius; ++z)
+        {
             // 计算欧几里得距离，保证是圆形区域
             int dx = x - playerChunkX;
             int dz = z - playerChunkZ;
-            if(dx*dx + dz*dz <= radius*radius){  // 在半径内
-                int dist = abs(dx) + abs(dz);   // 曼哈顿距离排序用
-                auto chunk = std::make_shared<Chunk>(glm::vec3(x*chunkSpacing, 0, z*chunkSpacing));
+            if (dx * dx + dz * dz <= radius * radius)
+            {                                 // 在半径内
+                int dist = abs(dx) + abs(dz); // 曼哈顿距离排序用
+                auto chunk = std::make_shared<Chunk>(glm::vec3(x * chunkSpacing, 0, z * chunkSpacing));
                 chunks.push_back({chunk, dist});
+                gChunks[{x, z}] = chunk;
+                totalChunks++;
             }
         }
     }
 
     // 按曼哈顿距离排序，距离近的先生成
-    std::sort(chunks.begin(), chunks.end(), [](const ChunkWithDist &a, const ChunkWithDist &b){
-        return a.dist < b.dist;
-    });
+    std::sort(chunks.begin(), chunks.end(), [](const ChunkWithDist &a, const ChunkWithDist &b)
+              { return a.dist < b.dist; });
 
     // 入队
-    for(auto &c : chunks){
+    for (auto &c : chunks)
+    {
         pendingChunks.push({c.chunk, false});
     }
+    loadedChunks = 0;
 }
 
-
-void updateChunkGeneration(int chunksPerFrame = 1) {
+std::queue<ChunkTask> pendingMeshChunks;
+void updateChunkGeneration(int chunksPerFrame = 1)
+{
     int count = 0;
-    while(!pendingChunks.empty() && count < chunksPerFrame){
+    while (!pendingChunks.empty() && count < chunksPerFrame)
+    {
         auto &task = pendingChunks.front();
-        if(!task.generated){
-            task.chunk->generate();  // 耗时操作
+        if (!task.generated)
+        {
+            task.chunk->generate();     // 耗时操作
+            task.chunk->finalizeMesh(); // 耗时操作
             task.generated = true;
             readyChunks.push_back(task.chunk);
             count++;
+            loadedChunks++;
+            std::cout<<"区块生成进度：" << loadedChunks * 100 / totalChunks << "%\n";
         }
         pendingChunks.pop();
     }
 }
 
-
 // -------------------- 输入处理 --------------------
-void processInput(const Uint8* state)
+void processInput(const Uint8 *state)
 {
-    if (state[SDL_SCANCODE_W]) camera.ProcessKeyboard(FORWARD, deltaTime);
-    if (state[SDL_SCANCODE_S]) camera.ProcessKeyboard(BACKWARD, deltaTime);
-    if (state[SDL_SCANCODE_A]) camera.ProcessKeyboard(LEFTWARD, deltaTime);
-    if (state[SDL_SCANCODE_D]) camera.ProcessKeyboard(RIGHTWARD, deltaTime);
-    if (state[SDL_SCANCODE_SPACE]) camera.ProcessKeyboard(UP, deltaTime);
-    if (state[SDL_SCANCODE_LSHIFT]) camera.ProcessKeyboard(DOWN, deltaTime);
+    if (state[SDL_SCANCODE_W])
+        camera.ProcessKeyboard(FORWARD, deltaTime);
+    if (state[SDL_SCANCODE_S])
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
+    if (state[SDL_SCANCODE_A])
+        camera.ProcessKeyboard(LEFTWARD, deltaTime);
+    if (state[SDL_SCANCODE_D])
+        camera.ProcessKeyboard(RIGHTWARD, deltaTime);
+    if (state[SDL_SCANCODE_SPACE])
+        camera.ProcessKeyboard(UP, deltaTime);
+    if (state[SDL_SCANCODE_LSHIFT])
+        camera.ProcessKeyboard(DOWN, deltaTime);
 }
 
 // 鼠标处理
-void handleMouseMotion(const SDL_Event& event)
+void handleMouseMotion(const SDL_Event &event)
 {
     float xoffset = event.motion.xrel;
     float yoffset = -event.motion.yrel; // 反转 y 轴
@@ -116,7 +158,7 @@ void handleMouseMotion(const SDL_Event& event)
 }
 
 // -------------------- 初始化函数 --------------------
-bool initSDL(SDL_Window** window, SDL_GLContext* context)
+bool initSDL(SDL_Window **window, SDL_GLContext *context)
 {
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
     {
@@ -171,7 +213,7 @@ Shader initResources()
 }
 
 // -------------------- 渲染函数 --------------------
-void renderScene(Shader& shader)
+void renderScene(Shader &shader)
 {
     // 清屏
     glClearColor(0.98f, 0.98f, 0.98f, 1.0f);
@@ -190,7 +232,8 @@ void renderScene(Shader& shader)
     // 渲染区块
     static int frameCount = 0;
     auto start = std::chrono::high_resolution_clock::now();
-    for(auto &chunk : readyChunks){
+    for (auto &chunk : readyChunks)
+    {
         chunk->render(shader);
     }
     auto end = std::chrono::high_resolution_clock::now();
@@ -204,7 +247,7 @@ void renderScene(Shader& shader)
 }
 
 // -------------------- 主循环 --------------------
-void gameLoop(SDL_Window* window, Shader& shader)
+void gameLoop(SDL_Window *window, Shader &shader)
 {
     bool running = true;
     SDL_Event event;
@@ -215,7 +258,7 @@ void gameLoop(SDL_Window* window, Shader& shader)
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-        const Uint8* state = SDL_GetKeyboardState(NULL);
+        const Uint8 *state = SDL_GetKeyboardState(NULL);
         processInput(state);
 
         while (SDL_PollEvent(&event))
@@ -233,7 +276,7 @@ void gameLoop(SDL_Window* window, Shader& shader)
 }
 
 // -------------------- 清理 --------------------
-void cleanup(SDL_Window* window, SDL_GLContext context)
+void cleanup(SDL_Window *window, SDL_GLContext context)
 {
     delete chunk;
     SDL_GL_DeleteContext(context);
@@ -244,7 +287,7 @@ void cleanup(SDL_Window* window, SDL_GLContext context)
 // -------------------- 主函数 --------------------
 int main()
 {
-    SDL_Window* window = nullptr;
+    SDL_Window *window = nullptr;
     SDL_GLContext context;
 
     if (!initSDL(&window, &context))

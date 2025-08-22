@@ -1,6 +1,8 @@
 #include "Chunk.h"
 #include <gtc/matrix_transform.hpp>
 #include <unordered_map>
+#include <iostream>
+#include "Globals.h"
 
 // ===== 面模板（与 Block::initSharedMesh 的顺序/UV一致） =====
 const Chunk::Vtx Chunk::FACE_TOP[6] = {
@@ -66,66 +68,80 @@ void Chunk::appendFace(std::vector<float> &out, const glm::vec3 &base, const Vtx
 }
 
 Chunk::Chunk(glm::vec3 origin) : origin(origin) {}
+bool Chunk::neighborsReady() {
+    static const std::vector<std::pair<int,int>> dirs = {
+        {1,0}, {-1,0}, {0,1}, {0,-1}
+    };
 
-void Chunk::generate()
-{
+    // 根据 origin 推回自己的 chunk 坐标
+    int cx = (int)origin.x / CHUNK_SIZE;
+    int cz = (int)origin.z / CHUNK_SIZE;
+
+    for(auto &d : dirs){
+        int nx = cx + d.first;
+        int nz = cz + d.second;
+
+        auto it = gChunks.find({nx, nz});
+        if(it == gChunks.end()) return false;          // 邻居还没分配
+        if(!it->second->generated) return false;       // 邻居还没生成方块
+    }
+    return true;
+}
+
+// 只生成 Block 数据
+void Chunk::generate() {
     blocks.clear();
 
-    // 生成底层石头
-    for (int x = 0; x < CHUNK_SIZE; x++)
-    {
-        for (int z = 0; z < CHUNK_SIZE; z++)
-        {
-            glm::vec3 pos = origin + glm::vec3(x, -1, z);
-            auto grassBlock = std::make_shared<Block>(BlockType::Stone);
-            blocks.push_back({grassBlock, pos});
+    for(int x = 0; x < CHUNK_SIZE; x++){
+        for(int z = 0; z < CHUNK_SIZE; z++){
+            // 世界坐标
+            int worldX = (int)origin.x + x;
+            int worldZ = (int)origin.z + z;
+
+            // 生成高度
+            float h = noise.GetNoise((float)worldX, (float)worldZ); // [-1,1]
+            int height = (int)((h + 1.0f) * 10.0f); // 0~20 高度可调
+
+            // 底层填充方块
+            for(int y = -1; y < height; y++){
+                glm::vec3 pos = origin + glm::vec3(x, y, z);
+                BlockType type = (y == height - 1) ? BlockType::Grass : BlockType::Stone;
+                auto block = std::make_shared<Block>(type);
+                blocks.push_back({block, pos});
+            }
         }
     }
 
-    // 生成草方块层
-    for (int x = 0; x < CHUNK_SIZE; x++)
-    {
-        for (int z = 0; z < CHUNK_SIZE; z++)
-        {
-            glm::vec3 pos = origin + glm::vec3(x, 0, z);
-            auto grassBlock = std::make_shared<Block>(BlockType::Grass);
-            blocks.push_back({grassBlock, pos});
-        }
-    }
+    generated = true;
+    dirty = true;
+}
 
+
+// 第二步：构建 Mesh（前提：邻居也生成了）
+void Chunk::finalizeMesh() {
     updateFaceVisibility();
-    buildMesh(); // —— 新增：生成合并网格 —— //
+    buildMesh();
     dirty = false;
 }
 
-// 简单面剔除（仅检查同一 Chunk 内方块）
-void Chunk::updateFaceVisibility()
-{
-    auto getBlockAtLocal = [&](int lx, int y, int lz) -> Block *
-    {
-        for (auto &b : blocks)
-        {
-            glm::vec3 p = b.position - origin; // 转为局部坐标
-            if ((int)p.x == lx && (int)p.y == y && (int)p.z == lz)
-                return b.block.get();
-        }
-        return nullptr;
-    };
 
-    for (auto &b : blocks)
-    {
-        glm::vec3 lp = b.position - origin; // 局部坐标
+// 简单面剔除（仅检查同一 Chunk 内方块）
+#include "Globals.h"
+
+void Chunk::updateFaceVisibility() {
+    for(auto &b : blocks) {
+        glm::vec3 wp = b.position; // 世界坐标
         Block *block = b.block.get();
 
-        block->visibleFaces[Face::TOP] = getBlockAtLocal(lp.x, lp.y + 1, lp.z) == nullptr;
-        block->visibleFaces[Face::BOTTOM] = getBlockAtLocal(lp.x, lp.y - 1, lp.z) == nullptr;
-        block->visibleFaces[Face::LEFT] = getBlockAtLocal(lp.x - 1, lp.y, lp.z) == nullptr;
-        block->visibleFaces[Face::RIGHT] = getBlockAtLocal(lp.x + 1, lp.y, lp.z) == nullptr;
-        block->visibleFaces[Face::FRONT] = getBlockAtLocal(lp.x, lp.y, lp.z + 1) == nullptr;
-        block->visibleFaces[Face::BACK] = getBlockAtLocal(lp.x, lp.y, lp.z - 1) == nullptr;
+        block->visibleFaces[Face::TOP]    = getBlockAtGlobal(wp.x, wp.y + 1, wp.z) == nullptr;
+        block->visibleFaces[Face::BOTTOM] = getBlockAtGlobal(wp.x, wp.y - 1, wp.z) == nullptr;
+        block->visibleFaces[Face::LEFT]   = getBlockAtGlobal(wp.x - 1, wp.y, wp.z) == nullptr;
+        block->visibleFaces[Face::RIGHT]  = getBlockAtGlobal(wp.x + 1, wp.y, wp.z) == nullptr;
+        block->visibleFaces[Face::FRONT]  = getBlockAtGlobal(wp.x, wp.y, wp.z + 1) == nullptr;
+        block->visibleFaces[Face::BACK]   = getBlockAtGlobal(wp.x, wp.y, wp.z - 1) == nullptr;
     }
-    dirty = true; // 网格需要重建
 }
+
 
 // —— 新增：释放旧批次 —— //
 void Chunk::clearMesh()
@@ -204,7 +220,6 @@ void Chunk::buildMesh()
         glBindVertexArray(0);
         batches.push_back(batch);
     }
-    dirty = false;
 }
 
 // —— 改：渲染改为绘制批次 —— //
@@ -228,4 +243,12 @@ void Chunk::render(Shader &shader)
         glDrawArrays(GL_TRIANGLES, 0, b.vertexCount);
     }
     glBindVertexArray(0);
+}
+Block* Chunk::getBlockAtLocal(int lx, int y, int lz) {
+    for(auto &b : blocks) {
+        glm::vec3 lp = b.position - origin; // 局部坐标
+        if((int)lp.x == lx && (int)lp.y == y && (int)lp.z == lz)
+            return b.block.get();
+    }
+    return nullptr;
 }

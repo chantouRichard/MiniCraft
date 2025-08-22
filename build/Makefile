@@ -248,6 +248,30 @@ src/Chunk.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Chunk.cpp.s
 .PHONY : src/Chunk.cpp.s
 
+src/Globals.obj: src/Globals.cpp.obj
+.PHONY : src/Globals.obj
+
+# target to build an object file
+src/Globals.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj
+.PHONY : src/Globals.cpp.obj
+
+src/Globals.i: src/Globals.cpp.i
+.PHONY : src/Globals.i
+
+# target to preprocess a source file
+src/Globals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Globals.cpp.i
+.PHONY : src/Globals.cpp.i
+
+src/Globals.s: src/Globals.cpp.s
+.PHONY : src/Globals.s
+
+# target to generate assembly for a file
+src/Globals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Globals.cpp.s
+.PHONY : src/Globals.cpp.s
+
 src/Shader.obj: src/Shader.cpp.obj
 .PHONY : src/Shader.obj
 
@@ -344,6 +368,9 @@ help:
 	@echo ... src/Chunk.obj
 	@echo ... src/Chunk.i
 	@echo ... src/Chunk.s
+	@echo ... src/Globals.obj
+	@echo ... src/Globals.i
+	@echo ... src/Globals.s
 	@echo ... src/Shader.obj
 	@echo ... src/Shader.i
 	@echo ... src/Shader.s

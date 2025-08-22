@@ -47,6 +47,9 @@
         "typeinfo": "cpp",
         "chrono": "cpp",
         "ratio": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "set": "cpp",
+        "list": "cpp",
+        "format": "cpp"
     }
 }

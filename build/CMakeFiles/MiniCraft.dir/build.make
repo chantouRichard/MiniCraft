@@ -76,15 +76,15 @@ CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj: CMakeFiles/MiniCraft.dir/includ
 CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj: E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.c
 CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj: CMakeFiles/MiniCraft.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj -MF CMakeFiles\MiniCraft.dir\external\glad\gl.c.obj.d -o CMakeFiles\MiniCraft.dir\external\glad\gl.c.obj -c E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c
+	C:\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj -MF CMakeFiles\MiniCraft.dir\external\glad\gl.c.obj.d -o CMakeFiles\MiniCraft.dir\external\glad\gl.c.obj -c E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c
 
 CMakeFiles/MiniCraft.dir/external/glad/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/MiniCraft.dir/external/glad/gl.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c > CMakeFiles\MiniCraft.dir\external\glad\gl.c.i
+	C:\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c > CMakeFiles\MiniCraft.dir\external\glad\gl.c.i
 
 CMakeFiles/MiniCraft.dir/external/glad/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/MiniCraft.dir/external/glad/gl.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c -o CMakeFiles\MiniCraft.dir\external\glad\gl.c.s
+	C:\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\02_Projects\02_Personal\MiniCraft\external\glad\gl.c -o CMakeFiles\MiniCraft.dir\external\glad\gl.c.s
 
 CMakeFiles/MiniCraft.dir/src/Block.cpp.obj: CMakeFiles/MiniCraft.dir/flags.make
 CMakeFiles/MiniCraft.dir/src/Block.cpp.obj: CMakeFiles/MiniCraft.dir/includes_CXX.rsp
@@ -146,11 +146,26 @@ CMakeFiles/MiniCraft.dir/src/Chunk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniCraft.dir/src/Chunk.cpp.s"
 	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\02_Projects\02_Personal\MiniCraft\src\Chunk.cpp -o CMakeFiles\MiniCraft.dir\src\Chunk.cpp.s
 
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj: CMakeFiles/MiniCraft.dir/flags.make
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj: CMakeFiles/MiniCraft.dir/includes_CXX.rsp
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/Globals.cpp
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj: CMakeFiles/MiniCraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj -MF CMakeFiles\MiniCraft.dir\src\Globals.cpp.obj.d -o CMakeFiles\MiniCraft.dir\src\Globals.cpp.obj -c E:\02_Projects\02_Personal\MiniCraft\src\Globals.cpp
+
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniCraft.dir/src/Globals.cpp.i"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\02_Projects\02_Personal\MiniCraft\src\Globals.cpp > CMakeFiles\MiniCraft.dir\src\Globals.cpp.i
+
+CMakeFiles/MiniCraft.dir/src/Globals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniCraft.dir/src/Globals.cpp.s"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\02_Projects\02_Personal\MiniCraft\src\Globals.cpp -o CMakeFiles\MiniCraft.dir\src\Globals.cpp.s
+
 CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: CMakeFiles/MiniCraft.dir/flags.make
 CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: CMakeFiles/MiniCraft.dir/includes_CXX.rsp
 CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/Shader.cpp
 CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: CMakeFiles/MiniCraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj"
 	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj -MF CMakeFiles\MiniCraft.dir\src\Shader.cpp.obj.d -o CMakeFiles\MiniCraft.dir\src\Shader.cpp.obj -c E:\02_Projects\02_Personal\MiniCraft\src\Shader.cpp
 
 CMakeFiles/MiniCraft.dir/src/Shader.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj: CMakeFiles/MiniCraft.dir/fl
 CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj: CMakeFiles/MiniCraft.dir/includes_CXX.rsp
 CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/TextureManager.cpp
 CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj: CMakeFiles/MiniCraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj"
 	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj -MF CMakeFiles\MiniCraft.dir\src\TextureManager.cpp.obj.d -o CMakeFiles\MiniCraft.dir\src\TextureManager.cpp.obj -c E:\02_Projects\02_Personal\MiniCraft\src\TextureManager.cpp
 
 CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: CMakeFiles/MiniCraft.dir/flags.make
 CMakeFiles/MiniCraft.dir/src/main.cpp.obj: CMakeFiles/MiniCraft.dir/includes_CXX.rsp
 CMakeFiles/MiniCraft.dir/src/main.cpp.obj: E:/02_Projects/02_Personal/MiniCraft/src/main.cpp
 CMakeFiles/MiniCraft.dir/src/main.cpp.obj: CMakeFiles/MiniCraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MiniCraft.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MiniCraft.dir/src/main.cpp.obj"
 	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniCraft.dir/src/main.cpp.obj -MF CMakeFiles\MiniCraft.dir\src\main.cpp.obj.d -o CMakeFiles\MiniCraft.dir\src\main.cpp.obj -c E:\02_Projects\02_Personal\MiniCraft\src\main.cpp
 
 CMakeFiles/MiniCraft.dir/src/main.cpp.i: cmake_force
@@ -198,6 +213,7 @@ MiniCraft_OBJECTS = \
 "CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj" \
 "CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj" \
 "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj" \
+"CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj" \
 "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj" \
 "CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj" \
 "CMakeFiles/MiniCraft.dir/src/main.cpp.obj"
@@ -210,6 +226,7 @@ MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/Block.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj
+MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/src/main.cpp.obj
@@ -220,7 +237,7 @@ MiniCraft.exe: E:/02_Projects/02_Personal/MiniCraft/lib/glew/lib/libglew32.a
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/linkLibs.rsp
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/objects1.rsp
 MiniCraft.exe: CMakeFiles/MiniCraft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable MiniCraft.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\02_Projects\02_Personal\MiniCraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable MiniCraft.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MiniCraft.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

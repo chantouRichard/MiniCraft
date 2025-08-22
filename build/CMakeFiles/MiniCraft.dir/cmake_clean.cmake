@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj.d"
   "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj"
   "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj.d"
+  "CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj"
+  "CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj.d"
   "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj"
   "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj.d"
   "CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj"

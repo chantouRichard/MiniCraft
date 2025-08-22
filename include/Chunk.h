@@ -23,9 +23,15 @@ public:
     ~Chunk() { clearMesh(); }
 
     void generate();
+    void finalizeMesh(); // 构建 Mesh（前提：邻居也生成了）
     void render(Shader& shader);
     glm::vec3 origin;
     std::vector<BlockInstance> blocks;
+    Block* getBlockAtLocal(int lx, int y, int lz);
+    bool neighborsReady();
+
+    bool generated = false; // 标记方块是否已生成
+    bool dirty = true; // 有变化需要重建mesh
 
 private:
     
@@ -41,7 +47,6 @@ private:
         GLsizei vertexCount = 0; // 顶点总数（非索引，pos+uv）
     };
     std::vector<DrawBatch> batches;
-    bool dirty = true; // 有变化需要重建mesh
 
     // —— 新增：生成各个面的顶点工具 —— //
     struct Vtx { float x,y,z,u,v; };

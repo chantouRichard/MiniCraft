@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 project(MiniCraft)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 # 包含头文件
 include_directories(
@@ -11,6 +13,7 @@ include_directories(
     lib/glm
     external/stb
     external/glad
+    external/noise
 )
 
 find_package(OpenGL REQUIRED)
