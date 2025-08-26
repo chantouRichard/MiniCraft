@@ -176,30 +176,6 @@ src/Block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/Block.cpp.s
 .PHONY : src/Block.cpp.s
 
-src/BlockManager.obj: src/BlockManager.cpp.obj
-.PHONY : src/BlockManager.obj
-
-# target to build an object file
-src/BlockManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.obj
-.PHONY : src/BlockManager.cpp.obj
-
-src/BlockManager.i: src/BlockManager.cpp.i
-.PHONY : src/BlockManager.i
-
-# target to preprocess a source file
-src/BlockManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.i
-.PHONY : src/BlockManager.cpp.i
-
-src/BlockManager.s: src/BlockManager.cpp.s
-.PHONY : src/BlockManager.s
-
-# target to generate assembly for a file
-src/BlockManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniCraft.dir\build.make CMakeFiles/MiniCraft.dir/src/BlockManager.cpp.s
-.PHONY : src/BlockManager.cpp.s
-
 src/Camera3D.obj: src/Camera3D.cpp.obj
 .PHONY : src/Camera3D.obj
 
@@ -359,9 +335,6 @@ help:
 	@echo ... src/Block.obj
 	@echo ... src/Block.i
 	@echo ... src/Block.s
-	@echo ... src/BlockManager.obj
-	@echo ... src/BlockManager.i
-	@echo ... src/BlockManager.s
 	@echo ... src/Camera3D.obj
 	@echo ... src/Camera3D.i
 	@echo ... src/Camera3D.s

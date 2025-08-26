@@ -334,4 +334,56 @@ CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/fstream.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/type_ptr.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/scalar_constants.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/constants.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_projection.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_clip_space.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/matrix_transform.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/matrix_transform.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_relational.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_relational.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_float.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_common.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_geometric.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_geometric.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_common.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_float.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_relational.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_relational.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/type_quat.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_float_precision.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_double.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_double_precision.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_trigonometric.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_trigonometric.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_transform.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/quaternion_transform.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/quaternion.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/epsilon.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/detail/setup.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/epsilon.inl \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/vec1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_bool1_precision.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_float1_precision.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_double1_precision.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_int1_sized.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint1.hpp \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/ext/vector_uint1_sized.hpp \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
+ C:/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ E:/02_Projects/02_Personal/MiniCraft/lib/glm/gtc/type_ptr.inl

@@ -10,7 +10,6 @@
 
 #include "Shader.h"
 #include "Camera3D.h"
-#include "BlockManager.h"
 #include "Block.h"
 #include "BlockType.h"
 #include "Chunk.h"
@@ -193,10 +192,28 @@ void processInput(const Uint8 *state)
         camera.ProcessKeyboard(LEFTWARD, deltaTime);
     if (state[SDL_SCANCODE_D])
         camera.ProcessKeyboard(RIGHTWARD, deltaTime);
-    if (state[SDL_SCANCODE_SPACE])
+    if (state[SDL_SCANCODE_SPACE] || (camera.mode == CameraMode::SURVIVAL && !camera.onGround))
         camera.ProcessKeyboard(UP, deltaTime);
     if (state[SDL_SCANCODE_LSHIFT])
         camera.ProcessKeyboard(DOWN, deltaTime);
+    camera.UpdatePhysics(deltaTime);
+    
+    // ----------------- 鼠标 -----------------
+    int mouseX, mouseY;
+    Uint32 mouseState = SDL_GetMouseState(&mouseX, &mouseY);
+
+    if (mouseState & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+        // 左键：破坏方块
+        camera.RaycastAndBreakBlock();
+    }
+
+    if (mouseState & SDL_BUTTON(SDL_BUTTON_RIGHT)) {
+        // 右键：放置方块
+        camera.RaycastAndPlaceBlock();
+    }
+
+    if(state[SDL_SCANCODE_TAB])
+        camera.mode = camera.mode == CameraMode::FLIGHT ? CameraMode::SURVIVAL : CameraMode::FLIGHT;
 }
 
 // 鼠标处理
@@ -221,7 +238,7 @@ bool initSDL(SDL_Window **window, SDL_GLContext *context)
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
-    *window = SDL_CreateWindow("OpenGL Cube",
+    *window = SDL_CreateWindow("MiniCraft",
                                SDL_WINDOWPOS_CENTERED,
                                SDL_WINDOWPOS_CENTERED,
                                SCR_WIDTH, SCR_HEIGHT,
@@ -294,6 +311,12 @@ void renderScene(Shader &shader)
         std::cout << "Render Time: " << renderTime << " ms" << std::endl;
         frameCount = 0;
     }
+    glm::mat4 model = glm::mat4(1.0f);
+    Shader debugShader("assets/shaders/debug.vert", "assets/shaders/debug.frag");
+        debugShader.use();
+        debugShader.setMat4("MVP", projection * view * model);
+        debugShader.setVec3("lineColor", glm::vec3(1.0f, 0.0f, 0.0f)); // 红色
+        camera.drawSelectedBlockHighlight(debugShader);
 }
 
 // -------------------- 主循环 --------------------

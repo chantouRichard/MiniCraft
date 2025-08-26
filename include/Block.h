@@ -26,6 +26,7 @@ public:
     bool visibleFaces[6] = { true, true, true, true, true, true };
     static void initSharedMesh(); // 初始化共享顶点数据
     GLuint getTextureForFace(Face f) const;
+    BlockType type;
 
 private:
     void setupMesh();
@@ -33,7 +34,6 @@ private:
 
     static unsigned int VAO, VBO;
     unsigned int textureTop, textureBottom, textureSide;
-    BlockType type;
 };
 
 #endif

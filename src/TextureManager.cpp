@@ -21,9 +21,9 @@ void TextureManager::init() {
 
     // 泥土
     textures[BlockType::Dirt] = {
-        loadTexture("assets/textures/dirt.png"),
-        loadTexture("assets/textures/dirt.png"),
-        loadTexture("assets/textures/dirt.png")
+        loadTexture("assets/textures/grass_bottom.png"),
+        loadTexture("assets/textures/grass_bottom.png"),
+        loadTexture("assets/textures/grass_bottom.png")
     };
 }
 

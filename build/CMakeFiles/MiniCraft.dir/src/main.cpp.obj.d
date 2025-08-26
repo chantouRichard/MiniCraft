@@ -563,13 +563,7 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Camera3D.h \
- E:/02_Projects/02_Personal/MiniCraft/include/BlockManager.h \
- E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Shader.h \
- E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
- E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
- E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
- E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -585,11 +579,16 @@ CMakeFiles/MiniCraft.dir/src/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Block.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/BlockType.h \
+ E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
  E:/02_Projects/02_Personal/MiniCraft/include/TextureManager.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Globals.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \
- E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
  E:/02_Projects/02_Personal/MiniCraft/external/noise/FastNoiseLite.h \
  E:/02_Projects/02_Personal/MiniCraft/external/stb/stb_image.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/math.h \
