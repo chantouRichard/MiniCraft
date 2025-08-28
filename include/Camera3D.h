@@ -86,6 +86,8 @@ public:
 
     RaycastHit Raycast(float maxDistance);
 
+    void debugPrintBlockBelow();
+
     private:
         void updateCameraVectors();
 };

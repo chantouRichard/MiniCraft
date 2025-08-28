@@ -69,7 +69,7 @@ void initChunks(int playerChunkX, int playerChunkZ)
     noise.SetSeed(12345); // 12345 可以换成随机数或玩家输入
     noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);
     noise.SetFrequency(0.05f); // 控制地形起伏的频率
-    int radius = 8;            // 半径
+    int radius = 2;            // 半径
     float chunkSpacing = CHUNK_SIZE;
 
     struct ChunkWithDist
@@ -125,13 +125,13 @@ void updateChunkGeneration(int chunksPerFrame = 1)
             readyChunks.push_back(task.chunk);
             count++;
             loadedChunks++;
-            std::cout<<"区块生成进度：" << loadedChunks * 100 / totalChunks << "%\n";
+            // std::cout<<"区块生成进度：" << loadedChunks * 100 / totalChunks << "%\n";
         }
         pendingChunks.pop();
     }
 }
 #include <unordered_set>
-const int RENDER_RADIUS = 8; // 渲染半径
+const int RENDER_RADIUS = 2; // 渲染半径
 void updateVisibleChunks(int playerChunkX, int playerChunkZ)
 {
     std::unordered_set<std::pair<int,int>, pair_hash> needed; // 存储需要的区块坐标
@@ -212,8 +212,9 @@ void processInput(const Uint8 *state)
         camera.RaycastAndPlaceBlock();
     }
 
-    if(state[SDL_SCANCODE_TAB])
-        camera.mode = camera.mode == CameraMode::FLIGHT ? CameraMode::SURVIVAL : CameraMode::FLIGHT;
+    // if(state[SDL_SCANCODE_TAB])
+        // camera.mode = camera.mode == CameraMode::FLIGHT ? CameraMode::SURVIVAL : CameraMode::FLIGHT;
+    if(state[SDL_SCANCODE_TAB])camera.debugPrintBlockBelow();
 }
 
 // 鼠标处理
@@ -308,7 +309,7 @@ void renderScene(Shader &shader)
     float renderTime = std::chrono::duration<float, std::milli>(end - start).count();
     if (++frameCount >= 1000)
     {
-        std::cout << "Render Time: " << renderTime << " ms" << std::endl;
+        // std::cout << "Render Time: " << renderTime << " ms" << std::endl;
         frameCount = 0;
     }
     glm::mat4 model = glm::mat4(1.0f);

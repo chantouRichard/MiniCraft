@@ -1,0 +1,50 @@
+[
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/MiniCraft.dir/includes_C.rsp -g -o CMakeFiles\\MiniCraft.dir\\external\\glad\\gl.c.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\external\\glad\\gl.c",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/external/glad/gl.c",
+  "output": "CMakeFiles/MiniCraft.dir/external/glad/gl.c.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\Block.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\Block.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/Block.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/Block.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\Camera3D.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\Camera3D.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/Camera3D.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/Camera3D.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\Chunk.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\Chunk.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/Chunk.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\Globals.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\Globals.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/Globals.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/Globals.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\Shader.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\Shader.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/Shader.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/Shader.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\TextureManager.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\TextureManager.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/TextureManager.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/TextureManager.cpp.obj"
+},
+{
+  "directory": "E:/02_Projects/02_Personal/MiniCraft/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MiniCraft.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\MiniCraft.dir\\src\\main.cpp.obj -c E:\\02_Projects\\02_Personal\\MiniCraft\\src\\main.cpp",
+  "file": "E:/02_Projects/02_Personal/MiniCraft/src/main.cpp",
+  "output": "CMakeFiles/MiniCraft.dir/src/main.cpp.obj"
+}
+]

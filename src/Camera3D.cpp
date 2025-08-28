@@ -498,3 +498,61 @@ void Camera3D::drawSelectedBlockHighlight(Shader &shader)
     glDeleteBuffers(1, &EBO);
     glDeleteVertexArrays(1, &VAO);
 }
+// 调试函数
+void Camera3D::debugPrintBlockBelow()
+{
+    // 当前相机位置
+    int bx = (int)std::floor(Position.x);
+    int by = (int)std::floor(Position.y) - 1; // 往下一个方块
+    int bz = (int)std::floor(Position.z);
+
+    // 检查高度范围
+    if (by < 0 || by >= CHUNK_HEIGHT)
+    {
+        std::cout << "[Debug] Block below out of world range." << std::endl;
+        return;
+    }
+
+    // 定位 chunk
+    int cx = (int)std::floor((float)bx / CHUNK_SIZE);
+    int cz = (int)std::floor((float)bz / CHUNK_SIZE);
+
+    auto it = gChunks.find({cx, cz});
+    if (it == gChunks.end())
+    {
+        std::cout << "[Debug] No chunk found at (" << cx << ", " << cz << ")" << std::endl;
+        return;
+    }
+
+    Chunk *chunk = it->second.get();
+
+    int lx = bx - cx * CHUNK_SIZE;
+    int lz = bz - cz * CHUNK_SIZE;
+
+    Block *b = chunk->blockGrid[lx][by][lz].get();
+    if (!b)
+    {
+        std::cout << "[Debug] No block found below at (" << bx << "," << by << "," << bz << ")" << std::endl;
+        return;
+    }
+
+    if (b->type == BlockType::Air)
+    {
+        std::cout << "[Debug] Block below is Air." << std::endl;
+        return;
+    }
+
+    // 打印方块纹理信息
+    std::cout << "[Debug] Block below at (" << bx << "," << by << "," << bz << "): type=" << (int)b->type << std::endl;
+
+    GLuint texTop = b->getTextureForFace(Face::TOP);
+    GLuint texBottom = b->getTextureForFace(Face::BOTTOM);
+    GLuint texSide = b->getTextureForFace(Face::FRONT);
+
+    std::cout << "   Top texture ID:    " << texTop << (texTop ? " (loaded)" : " (not loaded)");
+    std::cout << "   Bottom texture ID: " << texBottom << (texBottom ? " (loaded)" : " (not loaded)");
+    std::cout << "   Side texture ID:   " << texSide << (texSide ? " (loaded)" : " (not loaded)");
+
+    std::cout << "   Visible faces:     " << (b->visibleFaces[Face::TOP] ? "T" : "-") << (b->visibleFaces[Face::BOTTOM] ? "B" : "-") << (b->visibleFaces[Face::LEFT] ? "L" : "-") << (b->visibleFaces[Face::RIGHT] ? "R" : "-") << (b->visibleFaces[Face::FRONT] ? "F" : "-") << (b->visibleFaces[Face::BACK] ? "B" : "-") << std::endl;
+
+}
