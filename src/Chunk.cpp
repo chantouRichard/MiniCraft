@@ -3,7 +3,8 @@
 #include <unordered_map>
 #include <iostream>
 #include "Globals.h"
-
+#include <chrono>
+using Clock = std::chrono::high_resolution_clock;
 // ===== 面模板（与 Block::initSharedMesh 的顺序/UV一致） =====
 const Chunk::Vtx Chunk::FACE_TOP[6] = {
     {0.0f, 1.0f, 0.0f, 0.0f, 1.0f},
@@ -182,6 +183,7 @@ void Chunk::buildMesh()
         appendFace(buf, pos, face);
     };
 
+    auto start = Clock::now();
     // 遍历所有可见面，按纹理加入对应分组
     for (auto &inst : blocks)
     {
@@ -201,6 +203,8 @@ void Chunk::buildMesh()
         if (b.visibleFaces[Face::BACK])
             emit(b.getTextureForFace(Face::BACK), pos, FACE_BACK);
     }
+    auto end = Clock::now();
+    std::cout << "buildMesh: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
 
     // 为每个分组创建 VAO/VBO
     batches.reserve(groups.size());
@@ -236,8 +240,6 @@ void Chunk::buildMesh()
 // —— 改：渲染改为绘制批次 —— //
 void Chunk::render(Shader &shader)
 {
-    if (dirty)
-        buildMesh();
 
     shader.use();
     // 注意：我们在顶点里已经写入了世界坐标，这里 model 用单位矩阵

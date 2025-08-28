@@ -56,7 +56,7 @@ public:
     void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
     void ProcessMouseScroll(float yoffset);
 
-    CameraMode mode = CameraMode::SURVIVAL;  // 默认生存模式
+    CameraMode mode = CameraMode::FLIGHT;  // 默认生存模式
 
     // 是否在地面上
     bool onGround = false;

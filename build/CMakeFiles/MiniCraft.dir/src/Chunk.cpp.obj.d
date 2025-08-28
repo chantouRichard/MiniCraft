@@ -362,4 +362,9 @@ CMakeFiles/MiniCraft.dir/src/Chunk.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \
  E:/02_Projects/02_Personal/MiniCraft/include/Chunk.h \
- E:/02_Projects/02_Personal/MiniCraft/external/noise/FastNoiseLite.h
+ E:/02_Projects/02_Personal/MiniCraft/external/noise/FastNoiseLite.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h

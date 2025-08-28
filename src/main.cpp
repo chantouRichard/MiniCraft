@@ -62,6 +62,7 @@ int loadedChunks = 0;    // 已经生成的区块数量
 
 std::queue<ChunkTask> pendingChunks;
 std::vector<std::shared_ptr<Chunk>> readyChunks;
+const int RENDER_RADIUS = 8; // 渲染半径
 
 void initChunks(int playerChunkX, int playerChunkZ)
 {
@@ -69,7 +70,7 @@ void initChunks(int playerChunkX, int playerChunkZ)
     noise.SetSeed(12345); // 12345 可以换成随机数或玩家输入
     noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);
     noise.SetFrequency(0.05f); // 控制地形起伏的频率
-    int radius = 2;            // 半径
+    int radius = RENDER_RADIUS;            // 半径
     float chunkSpacing = CHUNK_SIZE;
 
     struct ChunkWithDist
@@ -111,27 +112,44 @@ void initChunks(int playerChunkX, int playerChunkZ)
 }
 
 std::queue<ChunkTask> pendingMeshChunks;
+#include <chrono>
+using Clock = std::chrono::high_resolution_clock;
 void updateChunkGeneration(int chunksPerFrame = 1)
 {
     int count = 0;
+
+    // 先尝试 finalizeMesh 已经生成过的区块
+    // 避免 finalizeMesh 被卡太久
+    size_t i = 0;
+    while (i < readyChunks.size() && count < chunksPerFrame)
+    {
+        auto &chunk = readyChunks[i];
+        if (chunk->dirty && chunk->neighborsReady())
+        {
+            chunk->finalizeMesh();
+            count++;
+            // 移到已完成区（如果你有需要的话），这里只是标记
+        }
+        i++;
+    }
+
+    // 再生成新的区块
     while (!pendingChunks.empty() && count < chunksPerFrame)
     {
         auto &task = pendingChunks.front();
         if (!task.generated)
         {
-            task.chunk->generate();     // 耗时操作
-            task.chunk->finalizeMesh(); // 耗时操作
+            task.chunk->generate(); // 只生成数据
             task.generated = true;
             readyChunks.push_back(task.chunk);
-            count++;
             loadedChunks++;
-            // std::cout<<"区块生成进度：" << loadedChunks * 100 / totalChunks << "%\n";
+            count++;
         }
         pendingChunks.pop();
     }
 }
+
 #include <unordered_set>
-const int RENDER_RADIUS = 2; // 渲染半径
 void updateVisibleChunks(int playerChunkX, int playerChunkZ)
 {
     std::unordered_set<std::pair<int,int>, pair_hash> needed; // 存储需要的区块坐标
