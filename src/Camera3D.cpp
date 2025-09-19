@@ -345,8 +345,10 @@ void Camera3D::RaycastAndBreakBlock()
     int bx = hit.bx, by = hit.by, bz = hit.bz;
     auto chunk = hit.chunk;
 
-    int lx = bx - (int)floor((float)bx / CHUNK_SIZE) * CHUNK_SIZE;
-    int lz = bz - (int)floor((float)bz / CHUNK_SIZE) * CHUNK_SIZE;
+    int cx = (int)floor((float)bx / CHUNK_SIZE);
+    int cz = (int)floor((float)bz / CHUNK_SIZE);
+    int lx = bx - cx * CHUNK_SIZE;
+    int lz = bz - cz * CHUNK_SIZE;
 
     // 删除 blockGrid
     chunk->blockGrid[lx][by][lz] = nullptr;
@@ -362,10 +364,28 @@ void Camera3D::RaycastAndBreakBlock()
                        }),
         chunk->blocks.end());
 
-    // 重建 mesh
+    // 标记当前区块需要重建
     chunk->dirty = true;
-    chunk->finalizeMesh();
+
+    // —— 新增：检查是否是边缘方块 —— //
+    if (lx == 0) {
+        auto it = gChunks.find({cx - 1, cz});
+        if (it != gChunks.end()) it->second->dirty = true;
+    }
+    if (lx == CHUNK_SIZE - 1) {
+        auto it = gChunks.find({cx + 1, cz});
+        if (it != gChunks.end()) it->second->dirty = true;
+    }
+    if (lz == 0) {
+        auto it = gChunks.find({cx, cz - 1});
+        if (it != gChunks.end()) it->second->dirty = true;
+    }
+    if (lz == CHUNK_SIZE - 1) {
+        auto it = gChunks.find({cx, cz + 1});
+        if (it != gChunks.end()) it->second->dirty = true;
+    }
 }
+
 const char* FaceToString(Face f) {
     switch(f) {
         case TOP: return "TOP";
@@ -393,7 +413,7 @@ void Camera3D::RaycastAndPlaceBlock()
     // 2. 计算放置位置
     glm::ivec3 placePos = {hit.bx, hit.by, hit.bz};
 
-    cout<<"面: "<<FaceToString(hit.face)<<endl;
+    // cout<<"面: "<<FaceToString(hit.face)<<endl;
     // 用射线方向判断要放置在哪一侧
     glm::vec3 ray = glm::normalize(Front);
     // 根据射线方向选择要放置的邻近方块
@@ -422,7 +442,7 @@ void Camera3D::RaycastAndPlaceBlock()
         return; // 超出高度限制
     if (chunk->blockGrid[lx][ly][lz] != nullptr)
     {
-        cout << "不能覆盖已有方块: " << lx << " " << ly << " " << lz << endl;
+        cout << "不能覆盖已有方块: " << chunk.get()->origin.x << " " << chunk.get()->origin.y << " " << chunk.get()->origin.z << endl;
         return;
     } // 不能覆盖已有方块
 

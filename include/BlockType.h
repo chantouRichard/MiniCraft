@@ -6,6 +6,8 @@ enum class BlockType {
     Dirt,
     Stone,
     Air,
+    Sand,
+    Water,
     // 之后可以加 Stone, Sand, Water...
 };
 

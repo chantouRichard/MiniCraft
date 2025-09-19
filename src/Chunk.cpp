@@ -94,31 +94,54 @@ void Chunk::generate() {
     blocks.clear();
 
     // 初始化 grid
-    for (int x=0;x<CHUNK_SIZE;x++)
-        for (int z=0;z<CHUNK_SIZE;z++)
-            for (int y=0;y<CHUNK_HEIGHT;y++)
+    for (int x = 0; x < CHUNK_SIZE; x++)
+        for (int z = 0; z < CHUNK_SIZE; z++)
+            for (int y = 0; y < CHUNK_HEIGHT; y++)
                 blockGrid[x][y][z] = nullptr;
 
-    for(int x = 0; x < CHUNK_SIZE; x++){
-        for(int z = 0; z < CHUNK_SIZE; z++){
+    const int SEA_LEVEL = 8;
+
+    for (int x = 0; x < CHUNK_SIZE; x++) {
+        for (int z = 0; z < CHUNK_SIZE; z++) {
             int worldX = (int)origin.x + x;
             int worldZ = (int)origin.z + z;
 
             float h = noise.GetNoise((float)worldX, (float)worldZ); // [-1,1]
-            int height = (int)((h + 1.0f) * 10.0f); // 0~20
+            int height = (int)((h + 1.0f) * 10.0f); // 映射到 0~20
 
-            for(int y = -1; y < height; y++){
+            // 填充方块
+            for (int y = -1; y < height; y++) {
                 glm::vec3 pos = origin + glm::vec3(x, y, z);
-                BlockType type = (y == height - 1) ? BlockType::Grass : BlockType::Stone;
+                BlockType type;
+
+                if (y == height - 1) {
+                    // 顶层方块
+                    if (height < SEA_LEVEL + 2) {
+                        type = BlockType::Sand;   // 低处用沙子
+                    } else {
+                        type = BlockType::Grass;  // 高处用草
+                    }
+                } else {
+                    type = BlockType::Stone; // 地下石头
+                }
 
                 auto block = std::make_shared<Block>(type);
 
-                // 存进 grid
                 if (y >= 0 && y < CHUNK_HEIGHT)
                     blockGrid[x][y][z] = block;
 
-                // 如果还需要渲染遍历，用 blocks 存储实例
                 blocks.push_back({block, pos});
+            }
+
+            // 如果柱子低于海平面 -> 补水
+            if (height < SEA_LEVEL) {
+                for (int y = height; y < SEA_LEVEL; y++) {
+                    glm::vec3 pos = origin + glm::vec3(x, y, z);
+                    auto water = std::make_shared<Block>(BlockType::Water);
+                    if (y >= 0 && y < CHUNK_HEIGHT)
+                        blockGrid[x][y][z] = water;
+                    blocks.push_back({water, pos});
+                }
             }
         }
     }
@@ -126,8 +149,6 @@ void Chunk::generate() {
     generated = true;
     dirty = true;
 }
-
-
 
 // 第二步：构建 Mesh（前提：邻居也生成了）
 void Chunk::finalizeMesh() {
@@ -160,10 +181,8 @@ void Chunk::clearMesh()
 {
     for (auto &b : batches)
     {
-        if (b.vao)
-            glDeleteVertexArrays(1, &b.vao);
-        if (b.vbo)
-            glDeleteBuffers(1, &b.vbo);
+        glDeleteVertexArrays(1, &b.vao);
+        glDeleteBuffers(1, &b.vbo);
     }
     batches.clear();
 }
@@ -173,38 +192,43 @@ void Chunk::buildMesh()
 {
     clearMesh();
 
-    // 纹理ID -> 顶点数组(非索引): 每顶点5个float (x,y,z,u,v)
+    // 纹理ID -> 顶点数组
     std::unordered_map<GLuint, std::vector<float>> groups;
     groups.reserve(32);
 
-    auto emit = [&](GLuint tex, const glm::vec3 &pos, const Vtx face[6])
+    // 改造 emit：传 face 类型，内部决定顶点数据
+    auto emit = [&](GLuint tex, const glm::vec3 &pos, Face face)
     {
         auto &buf = groups[tex];
-        appendFace(buf, pos, face);
+        switch(face){
+            case Face::TOP:    appendFace(buf, pos, FACE_TOP); break;
+            case Face::BOTTOM: appendFace(buf, pos, FACE_BOTTOM); break;
+            case Face::LEFT:   appendFace(buf, pos, FACE_LEFT); break;
+            case Face::RIGHT:  appendFace(buf, pos, FACE_RIGHT); break;
+            case Face::FRONT:  appendFace(buf, pos, FACE_FRONT); break;
+            case Face::BACK:   appendFace(buf, pos, FACE_BACK); break;
+        }
     };
 
-    auto start = Clock::now();
-    // 遍历所有可见面，按纹理加入对应分组
+    // 遍历所有可见面
     for (auto &inst : blocks)
     {
         Block &b = *inst.block.get();
         const glm::vec3 &pos = inst.position;
 
         if (b.visibleFaces[Face::TOP])
-            emit(b.getTextureForFace(Face::TOP), pos, FACE_TOP);
+            emit(b.getTextureForFace(Face::TOP), pos, Face::TOP);
         if (b.visibleFaces[Face::BOTTOM])
-            emit(b.getTextureForFace(Face::BOTTOM), pos, FACE_BOTTOM);
+            emit(b.getTextureForFace(Face::BOTTOM), pos, Face::BOTTOM);
         if (b.visibleFaces[Face::LEFT])
-            emit(b.getTextureForFace(Face::LEFT), pos, FACE_LEFT);
+            emit(b.getTextureForFace(Face::LEFT), pos, Face::LEFT);
         if (b.visibleFaces[Face::RIGHT])
-            emit(b.getTextureForFace(Face::RIGHT), pos, FACE_RIGHT);
+            emit(b.getTextureForFace(Face::RIGHT), pos, Face::RIGHT);
         if (b.visibleFaces[Face::FRONT])
-            emit(b.getTextureForFace(Face::FRONT), pos, FACE_FRONT);
+            emit(b.getTextureForFace(Face::FRONT), pos, Face::FRONT);
         if (b.visibleFaces[Face::BACK])
-            emit(b.getTextureForFace(Face::BACK), pos, FACE_BACK);
+            emit(b.getTextureForFace(Face::BACK), pos, Face::BACK);
     }
-    auto end = Clock::now();
-    std::cout << "buildMesh: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
 
     // 为每个分组创建 VAO/VBO
     batches.reserve(groups.size());
@@ -212,8 +236,7 @@ void Chunk::buildMesh()
     {
         GLuint tex = kv.first;
         std::vector<float> &data = kv.second;
-        if (data.empty())
-            continue;
+        if (data.empty()) continue;
 
         DrawBatch batch;
         batch.texture = tex;
@@ -225,11 +248,10 @@ void Chunk::buildMesh()
         glBindBuffer(GL_ARRAY_BUFFER, batch.vbo);
         glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(float), data.data(), GL_STATIC_DRAW);
 
-        // layout(location=0) vec3 aPos
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
         glEnableVertexAttribArray(0);
-        // layout(location=1) vec2 aTexCoord
-        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3 * sizeof(float)));
+
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
         glEnableVertexAttribArray(1);
 
         glBindVertexArray(0);

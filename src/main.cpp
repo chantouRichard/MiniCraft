@@ -126,6 +126,7 @@ void updateChunkGeneration(int chunksPerFrame = 1)
         auto &chunk = readyChunks[i];
         if (chunk->dirty && chunk->neighborsReady())
         {
+            if(chunk.get()->origin == glm::vec3(-16, 0, -16))std::cout<<"finalizeMesh"<<std::endl;
             chunk->finalizeMesh();
             count++;
             // 移到已完成区（如果你有需要的话），这里只是标记

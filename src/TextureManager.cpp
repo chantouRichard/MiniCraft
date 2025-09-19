@@ -25,6 +25,20 @@ void TextureManager::init() {
         loadTexture("assets/textures/grass_bottom.png"),
         loadTexture("assets/textures/grass_bottom.png")
     };
+
+    // 沙子
+    textures[BlockType::Sand] = {
+        loadTexture("assets/textures/sand.png"),
+        loadTexture("assets/textures/sand.png"),
+        loadTexture("assets/textures/sand.png")
+    };
+
+    // 水
+    textures[BlockType::Water] = {
+        loadTexture("assets/textures/water.png"),
+        loadTexture("assets/textures/water.png"),
+        loadTexture("assets/textures/water.png")
+    };
 }
 
 const TextureSet& TextureManager::get(BlockType type) {
